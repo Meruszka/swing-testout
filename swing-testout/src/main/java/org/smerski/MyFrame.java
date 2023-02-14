@@ -1,4 +1,6 @@
-package org.example;
+package org.smerski;
+
+import org.smerski.panelTwo.MyPanelTwo;
 
 import javax.swing.*;
 
@@ -6,7 +8,8 @@ public class MyFrame extends JFrame {
     public MyFrame(){
         super("Rysowanie Grafów");
 
-        JPanel panel = new MyPanel();
+//        JPanel panel = new MyPanelOne();
+        JPanel panel = new MyPanelTwo();
         add(panel);
 
         pack();

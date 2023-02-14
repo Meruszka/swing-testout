@@ -1,4 +1,4 @@
-package org.example;
+package org.smerski.panelOne;
 
 import lombok.Getter;
 import lombok.Setter;

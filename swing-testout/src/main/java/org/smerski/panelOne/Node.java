@@ -1,10 +1,7 @@
-package org.example;
+package org.smerski.panelOne;
 
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.ArrayList;
-
 
 public class Node {
 
@@ -24,8 +21,8 @@ public class Node {
         this.character = character;
         this.dim = dim;
 
-        this.x = 10 + (int)(Math.random() * 990);
-        this.y = 10 + (int)(Math.random() * 790);
+        this.x = 10 + (int)(Math.random() * 900);
+        this.y = 10 + (int)(Math.random() * 700);
 
     }
 
