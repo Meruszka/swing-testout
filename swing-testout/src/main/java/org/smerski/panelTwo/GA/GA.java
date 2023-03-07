@@ -4,8 +4,8 @@ public class GA {
 
         public static void main(String[] args) {
             // chromosome is float array of values for function
-            int populationSize = 100;
-            int chromosomeLength = 3;
+            int populationSize = 150;
+            int chromosomeLength = 1;
             int numberOfGenerations = 20000;
             double mutationRate = 0.0;
             double crossoverRate = 0.75;
