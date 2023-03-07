@@ -10,7 +10,9 @@ public class RunnableDemo implements Runnable {
         this.partialList = partialList;
     }
     public void run() {
+        System.out.println("Thread " + Thread.currentThread().getId() + " is running");
         sum = partialList.stream().mapToInt(Integer::intValue).sum();
+        System.out.println("Thread " + Thread.currentThread().getId() + " is done");
     }
 
 }

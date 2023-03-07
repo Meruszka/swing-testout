@@ -35,7 +35,7 @@ public class SumRace {
             int startOfSubList = i * numOfElements / numOfThreads;
             int endOfSubList = (i + 1) * numOfElements / numOfThreads;
             List<Integer> partialList = numbersToBeAdded.subList(startOfSubList, endOfSubList);
-            
+
             RunnableDemo sum = new RunnableDemo(partialList);
             Thread t = new Thread(sum);
             t.start();
@@ -43,13 +43,14 @@ public class SumRace {
             runnables.add(sum);
         }
 
-        for (Thread t : threads) {
-            try {
-                t.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+//        for (Thread t : threads) {
+//            try {
+//                t.join();
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
+
         int totalSum = 0;
         for (RunnableDemo r : runnables) {
             totalSum += r.sum;
